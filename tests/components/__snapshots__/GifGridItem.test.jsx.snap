@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GifGridItem match snapshot 1`] = `
+<div>
+  <div
+    class="card"
+  >
+    <img
+      alt="onepunch"
+      src="https://media3.giphy.com/media/YJDmc88k7ttao/giphy.gif?cid=3e9512a86cj6lnl8snfj85eejeconk2yokdtueu3gqf2rbhz&rid=giphy.gif&ct=g"
+    />
+    <p
+      data-testid="titleitem"
+    >
+      onepunch
+    </p>
+  </div>
+</div>
+`;

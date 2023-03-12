@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test on AddCategorie match snaspshot 1`] = `
+<div>
+  <form
+    aria-label="form"
+  >
+    <input
+      placeholder="Search Gifs"
+      type="text"
+      value=""
+    />
+  </form>
+</div>
+`;
