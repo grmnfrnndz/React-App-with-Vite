@@ -2,9 +2,8 @@
 import React from 'react';
 import {render, screen} from "@testing-library/react";
 import {GifGrid} from "../../src/components/index.js";
-
-
-jest.mock("../../src/hooks/useFetchGifs");
+import {UseFetchGifs} from "../../src/hooks/useFetchGifs.js";
+// jest.mock("../../src/hooks/useFetchGifs");
 
 
 
@@ -18,10 +17,11 @@ describe('test on GifGrid', function () {
     });
 
     test('show loading', () => {
-        UseFetchGifs.mockReturnValue({
-            images: [],
-            isLoading: true,
-        });
+
+        // UseFetchGifs.mockReturnValue({
+        //     images: [],
+        //     isLoading: true,
+        // });
 
 
         render(<GifGrid category={category} />);
@@ -29,7 +29,7 @@ describe('test on GifGrid', function () {
         expect(screen.getByText('Cargando...'));
         expect(screen.getByText(category));
 
-        screen.debug();
+        // screen.debug();
     });
 
     test('show item when load imagen from UseFetchGifs', () => {

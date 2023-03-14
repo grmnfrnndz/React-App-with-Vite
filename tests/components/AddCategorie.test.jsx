@@ -10,7 +10,7 @@ describe('test on AddCategorie', function () {
 
 
     test('match snaspshot', () => {
-        const {container} = render(<AddCategorie />);
+        const {container} = render(<AddCategorie onNewCategory={() => {}}/>);
         expect(container).toMatchSnapshot();
     });
 
